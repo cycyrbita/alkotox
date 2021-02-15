@@ -17,6 +17,11 @@
         background-size: 100% auto;
         background-position: center bottom;
     }
+
+    &_warning {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
 
 .section__title {
