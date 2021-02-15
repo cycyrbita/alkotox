@@ -1,224 +1,61 @@
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
 
     &_face {
-        position: relative;
-        z-index: 5;
-        padding-top: 40px;
-        background-image: url("../media/section/face.jpg");
+        background-image: url('../media/section/face.jpg');
+        background-size: cover;
         background-position: center bottom;
-        background-size: cover;
-    }
-
-    &_demo {
-        min-height: 870px;
-        padding-bottom: 0;
-        background-image: url("../media/section/demo.jpg");
-        background-position: center top;
-        background-size: cover;
-    }
-
-    &_nano {
-        background-image: url("../media/section/nano.jpg");
-        background-position: center bottom;
-        background-size: cover;
-    }
-
-    &_glase {
-        position: relative;
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            content: '';
-            background-image: url("../media/section/demo-glase.png");
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-size: 100% auto;
-        }
-    }
-
-    &_vision {
-        background-image: url("../media/section/vision.jpg");
-        background-position: center center;
-        background-size: auto 100%;
-    }
-
-    &_help {
-        position: relative;
-        padding-top: 60px;
-        padding-bottom: 0 !important;
-        overflow: hidden;
-        background-image: url("../media/section/help.jpg");
-        background-position: center center;
-        background-size: cover;
-    }
-
-    &_study {
-        background-image: url("../media/section/study.jpg");
-        background-position: center center;
-        background-size: cover;
-    }
-
-    &_event {
-        background-image: url("../media/section/event.jpg");
-        background-position: center center;
-        background-size: cover;
-    }
-
-    &_professional {
-        padding-bottom: 60px;
-        overflow: hidden;
-        background-image: url("../media/section/professional.jpg");
-        background-position: center center;
-        background-size: cover;
-    }
-
-    &_commits {
-        background-color: #5693c5;
-    }
-
-    &_footer {
-        padding-top: 160px !important;
-        padding-bottom: 40px !important;
     }
 }
 
 .section__title {
-    font-family: "HeadingPro", sans-serif;
-    font-size: 63px;
+    font-family: "CodecCold", sans-serif;
+    font-size: 60px;
     font-weight: 800;
     line-height: 1;
     text-transform: uppercase;
+    color: #302e62;
 }
 
 @media (max-width: 1310px) {
-    .section__title {
-        font-size: 44px;
-    }
-
     .section {
         padding-top: 80px;
         padding-bottom: 80px;
+    }
 
-        &_demo {
-            min-height: 0;
-            padding-bottom: 280px;
-        }
-
-        &_help {
-            padding-bottom: 130px;
-        }
-
-        &_footer {
-            padding-top: 40px !important;
-            padding-bottom: 40px !important;
-        }
-
-        &_vision {
-            padding-top: 0;
-        }
+    .section__title {
+        font-size: 44px;
     }
 }
 
 @media (max-width: 992px) {
     .section {
-        &_demo {
-            padding-bottom: 200px;
-        }
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
 @media (max-width: 768px) {
-    .section__title {
-        font-size: 38px;
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-
-        &_demo {
-            padding-bottom: 135px;
-        }
-
-        &_help {
-            padding-bottom: 110px;
-        }
-
-        &_vision {
-            padding-top: 0;
-        }
+    .section__title {
+        font-size: 38px;
     }
 }
 
 @media (max-width: 480px) {
-    .section__title {
-        font-size: 30px;
-    }
-
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
-
-        &_face {
-            background-image: url("../media/section/face-480.jpg");
-        }
-
-        &_demo {
-            padding-top: 330px;
-            padding-bottom: 100px;
-            background-image: url("../media/section/demo-480.jpg");
-        }
-
-        &_help {
-            padding-top: 225px;
-            padding-bottom: 130px;
-            background-image: url("../media/section/help-480.jpg");
-            background-position: center top;
-        }
-
-        &_footer {
-            padding-top: 20px !important;
-            padding-bottom: 20px !important;
-        }
-
-        &_nano {
-            padding-bottom: 60px;
-            background-image: url("../media/section/nano-480.jpg");
-        }
-
-        &_vision {
-            background-image: url("../media/section/vision-480.jpg");
-            background-position: center top;
-            background-size: auto auto;
-        }
-
-        &_study {
-            padding-top: 220px;
-            background-image: url("../media/section/study-480.jpg");
-            background-position: center top;
-        }
-
-        &_event {
-            padding-top: 280px;
-            background-image: url("../media/section/event-480.jpg");
-            background-position: center top;
-        }
     }
 
-    .section_glase::before {
-        top: auto;
-        bottom: 0;
-        height: 260px;
-        background-image: url("../media/section/demo-glase.png");
-        background-size: cover;
+    .section__title {
+        font-size: 30px;
     }
 }
