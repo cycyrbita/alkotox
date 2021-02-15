@@ -1,0 +1,37 @@
+
+.health {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.health__title {
+    margin-bottom: 60px;
+    text-align: center;
+
+    & mark {
+        display: block;
+        color: #f70b2c;
+    }
+
+    & span {
+        display: block;
+    }
+}
+
+.health__product {
+    max-width: 16%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 1310px) {
+    .health__title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .health__product {
+        max-width: 19%;
+    }
+}
