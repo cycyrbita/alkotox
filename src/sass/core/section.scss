@@ -22,6 +22,16 @@
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
+
+    &_future {
+        position: relative;
+        z-index: 2;
+    }
+
+    &_product {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .section__title {
