@@ -1,0 +1,144 @@
+
+.instruction__title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.instruction__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instruction__item {
+    flex: 0 0 355px;
+    width: 355px;
+
+    &:nth-child(1) {
+        & .instruction__media {
+            &::after {
+                background-image: url("../media/instruction/item-1.jpg");
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        & .instruction__media {
+            &::after {
+                background-image: url("../media/instruction/item-2.jpg");
+            }
+        }
+    }
+
+    &:nth-child(3) {
+        & .instruction__media {
+            & > img:last-child {
+                display: none;
+            }
+
+            &::after {
+                background-image: url("../media/instruction/item-3.jpg");
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.instruction__media {
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        right: -75px;
+        content: '';
+        width: 39px;
+        height: 42px;
+        background-image: url("../media/instruction/arrow.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.instruction__description {
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #3a3868;
+    line-height: 1;
+}
+
+@media (max-width: 1310px) {
+    .instruction__item {
+        width: 235px;
+        flex-basis: 235px;
+    }
+
+    .instruction__media {
+        margin-bottom: 10px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .instruction__description {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 768px) {
+    .instruction__body {
+        flex-wrap: wrap;
+        margin-top: -15px;
+    }
+
+    .instruction__item {
+        margin-top: 15px;
+        width: calc(50% - 7.5px);
+        flex-basis: calc(50% - 7.5px);
+
+        &:nth-child(3) {
+            & .instruction__media {
+                & > img:first-child {
+                    display: none;
+                }
+
+                & > img:last-child {
+                    display: block;
+                }
+
+                &::after {
+                    background-image: url("../media/instruction/item-3-768.jpg");
+                }
+            }
+        }
+
+        &:last-child {
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .instruction__description {
+        font-size: 16px;
+    }
+}
