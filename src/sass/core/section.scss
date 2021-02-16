@@ -32,6 +32,14 @@
         position: relative;
         z-index: 1;
     }
+
+    &_professionals {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        background-image: url('../media/section/professionals.jpg');
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .section__title {
@@ -52,6 +60,10 @@
             padding-top: 0;
             padding-bottom: 25px;
         }
+
+        &_professionals {
+            padding-top: 580px;
+        }
     }
 
     .section__title {
@@ -67,6 +79,10 @@
         &_health {
             padding-bottom: 10px;
         }
+
+        &_professionals {
+            padding-top: 340px;
+        }
     }
 
     .section__title {
@@ -81,6 +97,10 @@
 
         &_health {
             padding-bottom: 10px;
+        }
+
+        &_professionals {
+            padding-top: 106px;
         }
     }
 

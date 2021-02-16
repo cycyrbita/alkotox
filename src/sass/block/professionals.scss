@@ -1,0 +1,132 @@
+
+.professionals {
+    position: relative;
+    padding: 50px;
+    background-image: url("../media/professionals/bg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        position: absolute;
+        bottom: -55px;
+        right: 100px;
+        width: 473px;
+        height: 750px;
+        content: '';
+        background-image: url("../media/professionals/human.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.professionals__info {
+    width: 50%;
+}
+
+.professionals__title {
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+
+.professionals__description {
+    margin-bottom: 30px;
+
+    & p {
+        font-size: 20px;
+        color: #302e62;
+
+        & + p {
+            margin-top: 20px;
+        }
+    }
+}
+
+.professionals__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.professionals__name {
+    margin-right: 20px;
+
+    & mark {
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        color: #302e62;
+    }
+
+    & span {
+        display: block;
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
+@media (max-width: 1310px) {
+    .professionals {
+        background-image: url("../media/professionals/bg-1310.jpg");
+
+        &::before {
+            bottom: 100%;
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 500px;
+        }
+    }
+
+    .professionals__info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .professionals {
+        &::before {
+            width: 190px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .professionals {
+        padding-top: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        &::before {
+            bottom: calc(100% - 120px);
+            width: 176px;
+            height: 206px;
+            content: '';
+            background-image: url("../media/professionals/human-480.png");
+        }
+    }
+
+    .professionals__description {
+        & p {
+            font-size: 17px;
+
+            & + p {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .professionals__name {
+        & mark {
+            font-size: 17px;
+        }
+
+        & span {
+            font-size: 15px;
+        }
+    }
+
+    .professionals__title {
+        margin-bottom: 15px;
+    }
+}
