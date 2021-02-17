@@ -1,37 +1,97 @@
 
 .health {
-    padding-right: 15px;
-    padding-left: 15px;
+    display: flex;
+}
+
+.health__box {
+    flex: 0 0 50%;
+    width: 50%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #4e4a4a;
+
+    &:nth-child(1) {
+        background-image: url("../media/health/bg.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    &:nth-child(2) {
+        padding-right: 15px;
+        padding-left: 100px;
+    }
 }
 
 .health__title {
-    margin-bottom: 60px;
-    text-align: center;
+    color: #fff;
+    font-size: 53px;
 
     & mark {
         display: block;
+        margin-top: 40px;
         color: #f70b2c;
+        font-size: 57px;
+        line-height: 0.8;
     }
 
     & span {
         display: block;
+        font-size: 120px;
     }
 }
 
-.health__product {
-    max-width: 16%;
-    margin-right: auto;
-    margin-left: auto;
+@media (max-width: 1310px) {
+    .health__box {
+        &:nth-child(2) {
+            padding: 80px 30px;
+        }
+    }
+
+    .health__title {
+        font-size: 38px;
+
+        & span {
+            font-size: 75px;
+        }
+
+        & mark {
+            font-size: 40px;
+        }
+    }
 }
 
-@media (max-width: 1310px) {
+@media (max-width: 768px) {
     .health__title {
-        margin-bottom: 30px;
+        font-size: 24px;
+
+        & span {
+            font-size: 46px;
+        }
+
+        & mark {
+            margin-top: 20px;
+            font-size: 28px;
+        }
+    }
+
+    .health__box {
+        &:nth-child(2) {
+            padding: 50px 15px;
+        }
     }
 }
 
 @media (max-width: 480px) {
-    .health__product {
-        max-width: 19%;
+    .health {
+        flex-direction: column;
+    }
+
+    .health__box {
+        flex-basis: 100%;
+        width: 100%;
+
+        &:nth-child(2) {
+            padding: 30px 15px;
+        }
     }
 }
