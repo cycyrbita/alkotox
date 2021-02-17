@@ -13,10 +13,6 @@ $(document).ready(function () {
         }
     })
 
-    $('.study__line-after').css('width', function() {
-        return $(this).parent('.study__line').children().children('span').text() + '%';
-    })
-
     $('.nano__btn').on('click', function(e){
         $('html,body').stop().animate({ scrollTop: $('.js-section_face').offset().top }, 1000);
         e.preventDefault();
@@ -62,13 +58,16 @@ $(document).ready(function () {
         loop: true,
         autoHeight: true,
         margin: 40,
+        stagePadding: 20,
         responsive : {
             320 : {
-                items: 1
+                items: 1,
+                nav: true
             },
 
             768 : {
-                items: 2
+                items: 2,
+                nav: false
             },
 
             1280 : {
@@ -76,22 +75,4 @@ $(document).ready(function () {
             }
         }
     });
-    if ( $('.js-demoAnimate span').length > 0) {
-        let lengthTitle = $('.js-demoAnimate span').text().trim();
-        addDelayAnimate (lengthTitle);
-        
-    } else {
-        let lengthTitle = $('.js-demoAnimate').text().trim();
-        addDelayAnimate (lengthTitle);
-    }
-
-    function addDelayAnimate (lengthTitle) {
-        let result = '';
-        let j = 0;
-        for (let i = 0; i < lengthTitle.length; i++) {
-            j += 0.1;
-            result += '<span style="animation-delay: ' + j + 's; -webkit-animation-delay: ' + j + 's;">' + lengthTitle[i] + '</span>';
-        }
-        $('.js-demoAnimate').html(result);
-    }
 });
