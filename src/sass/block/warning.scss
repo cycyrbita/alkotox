@@ -50,6 +50,7 @@
     font-weight: 800;
     font-size: 60px;
     line-height: .8;
+    text-transform: uppercase;
 
     &_size {
         font-size: 39px;
@@ -102,18 +103,28 @@
     }
 
     .warning__item {
-        flex-direction: column;
+        padding-top: 20px;
+        flex-direction: column-reverse;
+        background-color: #171818;
 
         &_reverse {
-            flex-direction: column-reverse;
+            flex-direction: column;
+            background-color: #ebceca;
         }
     }
 
     .warning__media {
         flex-basis: 230px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 
     .warning__description {
         font-size: 17px;
+    }
+
+    .warning__subtitle {
+        font-size: 35px;
+        line-height: 1;
     }
 }

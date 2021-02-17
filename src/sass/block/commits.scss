@@ -164,6 +164,10 @@
         margin-top: 15px !important;
     }
 
+    .commits__box .owl-nav {
+        max-width: 235px;
+    }
+
     .commits__box .owl-dot {
         width: 40px !important;
         height: 5px !important;
@@ -174,7 +178,12 @@
     }
 
     .commits__title {
-        font-size: 41px;
+        margin-bottom: 15px;
+        font-size: 26px;
         text-align: center;
+
+        & span {
+            display: inline;
+        }
     }
 }

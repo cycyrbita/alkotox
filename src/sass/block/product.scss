@@ -201,6 +201,11 @@
 @media (max-width: 480px) {
     .product__media {
         background-size: cover;
+
+        &::before {
+            transform: translate(60%, -120px);
+            box-shadow: -16px -16px 70px 40px rgba(0, 0, 0, 0.3);
+        }
     }
     
     .product__title {

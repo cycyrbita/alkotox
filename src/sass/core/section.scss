@@ -48,6 +48,11 @@
     &_commits {
         background-color: #ebceca;
     }
+
+    &_footer {
+        padding-top: 150px;
+        padding-bottom: 40px;
+    }
 }
 
 .section__title {
@@ -71,6 +76,15 @@
 
         &_professionals {
             padding-top: 580px;
+        }
+
+        &_footer {
+            padding-top: 0 !important;
+            padding-bottom: 40px;
+        }
+
+        &_job {
+            padding-bottom: 0 !important;
         }
     }
 
@@ -109,6 +123,12 @@
 
         &_professionals {
             padding-top: 106px;
+        }
+
+        &_face {
+            background-image: url('../media/section/face-480.jpg');
+            background-size: auto auto;
+            background-position: center top;
         }
     }
 

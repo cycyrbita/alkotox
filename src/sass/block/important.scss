@@ -41,6 +41,7 @@
 @media (max-width: 1310px) {
     .important {
         flex-direction: column;
+        margin-top: 30px;
     }
 
     .important__title {
@@ -57,5 +58,11 @@
             top: 10px;
             transform: translate(-50%, 0);
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .important {
+        padding-right: 15px;
     }
 }
